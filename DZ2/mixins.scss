@@ -1,0 +1,36 @@
+$breakpoint-desktop: 1920px;
+$breakpoint-tablet: 1280px;
+$breakpoint-mobile: 360px;
+
+
+@mixin btn {
+  line-height: 156%;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin desktop{
+  @media screen and (max-width: $breakpoint-desktop){
+  @content;
+  }
+}
+
+@mixin tablet{
+  @media screen and (max-width: $breakpoint-tablet){
+    @content;
+  }
+}
+
+@mixin mobile{
+  @media screen and (max-width: $breakpoint-mobile){
+    @content;
+  }
+}
+
