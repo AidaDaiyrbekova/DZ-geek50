@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.block-questions {
+  padding: 96px 200px;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.frequently {
+  width: 768px;
+  text-align: center;
+  margin-bottom: 40px;
+
+  h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 122%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #101828;
+  }
+
+  p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    padding-top: 20px;
+    color: #667085;
+  }
+}
+
+.questions {
+  width: 768px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.question-item {
+  border-bottom: 1px solid #EAECF0;
+  padding-bottom: 20px;
+  position: relative;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.question-radio {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.question-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 156%;
+  color: #101828;
+  width: 100%;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 24px;
+}
+
+.icon img {
+  display: block;
+  max-width: 18px;
+  max-height: 18px;
+  object-fit: contain;
+}
+
+.icon.minus {
+  display: none;
+}
+
+.question-radio:checked {
+  & + .question-label {
+    .icon.plus {
+      display: none;
+    }
+    .icon.minus {
+      display: flex;
+    }
+  }
+
+  // ответ
+  & + .question-label + .answer {
+    display: block;
+  }
+}
+
+.answer {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #667085;
+  padding-left: 0;
+  margin-top: 8px;
+  display: none;
+}
+@media (max-width: 960px) {
+  .block-questions {
+    padding: 60px 80px;
+    width: 100%;
+    max-width: 960px;
+  }
+  .frequently {
+    width: 800px;
+  }
+  .questions {
+    width: 640px;
+  }
+}
+
+@media (max-width: 360px) {
+  .block-questions {
+    padding: 32px 30px;
+    width: 100%;
+    max-width: 360px;
+  }
+  .frequently {
+    padding: 0 16px;
+    width: 300px;
+    h2 {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 127%;
+      width: 268px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 156%;
+      width: 268px;
+    }
+  }
+  .questions {
+    width: 300px;
+  }
+}
