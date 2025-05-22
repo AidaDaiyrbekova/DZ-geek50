@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="request">
+        <div class="container">
+            <div class="left-side">
+                <img src="image/Img1.png" alt="photo-request">
+            </div>
+            <div class="right-side">
+            <div class="leave-request">
+                <h2>Leave a request</h2>
+                <div class="request-inner">
+                    <div class="request-item">
+                        <form action="/register" method="post">
+                            <p>Name</p>
+                            <input type="text" name="name" value="Your name">
+
+                            <p>Email</p>
+                            <input type="email" name="email" value="you@company.com">
+
+                            <p>Password</p>
+                            <input type="password" name="password" value="Your password">
+                        </form>
+
+                            <div class="gender">
+                                <p>Gender</p>
+                                <input type="radio" id="female" name="gender" class="gender-radio" >
+                                <label for="female">Woman</label>
+
+                                <input type="radio" id="male" name="gender" class="gender-radio" >
+                                 <label for="male">Man</label>
+
+                            </div>
+
+                        <button type="button" class="select">Select file</button>
+
+                        <label for="policy">
+                            <input type="checkbox" id="policy" name="gender" class="checkbox-policy" />
+                            You agree to our friendly <a href="#">privacy policy</a>.
+                        </label>
+
+                    </div>
+                    <form action="/register" method="post">
+                    <button type="submit" class="btn-register">
+                        Register
+                    </button>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
