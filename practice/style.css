@@ -6,8 +6,7 @@
 }
 
 body {
-  background-color: #1a1a1a;
-  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.83);
   font-family: Arial, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,23 +18,20 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   min-height: 100vh;
-  margin: 0;
   padding-top: 60px;
 }
 
 .container {
   background-color: #000000;
-  padding: 30px;
-  border-radius: 10px;
-  width: 600px;
-  -webkit-box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
-          box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  width: 740px;
+  padding: 60px 30px;
+  height: 838px;
 }
 
 h1 {
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 140%;
   color: #fff;
   margin-bottom: 40px;
@@ -46,41 +42,50 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .task-input {
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
+  background-color: #000000;
   border-radius: 12px;
   padding: 16px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  background-color: #000000;
-  font-size: 16px;
+  width: 440px;
+}
+
+.task-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin-left: 90px;
 }
 
 .btn {
-  border: 1px solid #db00ff;
+  border: 1px solid #DB00FF;
   border-radius: 12px;
   padding: 16px;
   cursor: pointer;
+  width: 100px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000;
 }
 
 .btn:hover {
-  background-color: #baa5be;
+  background-color: #DB00FF;
 }
 
 .btn:active {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.clear-all-btn:hover {
-  background-color: #baa5be;
+  border: 1px solid #db00ff;
+  border-radius: 12px;
+  -webkit-box-shadow: inset 0 0 20px 0 rgba(43, 0, 50, 0.85);
+          box-shadow: inset 0 0 20px 0 rgba(43, 0, 50, 0.85);
 }
 
 .task-list {
@@ -91,7 +96,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 15px;
+  gap: 30px;
 }
 
 .task-item {
@@ -101,24 +106,23 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
 }
 
-.cancel-btn:hover {
-  background-color: #baa5be;
-}
-
-.save-btn:hover {
-  background-color: #baa5be;
+.task-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  width: 128px;
+  margin-left: 172px;
 }
 
 .icon {
   width: 54px;
   height: 54px;
   cursor: pointer;
-  border: 2px solid transparent;
-  border-radius: 5px;
-  padding: 3px;
+  border: 1px solid #DB00FF;
+  border-radius: 12px;
   -webkit-transition: border-color 0.3s ease, -webkit-transform 0.2s ease;
   transition: border-color 0.3s ease, -webkit-transform 0.2s ease;
   transition: border-color 0.3s ease, transform 0.2s ease;
@@ -126,7 +130,12 @@ h1 {
 }
 
 .icon:hover {
-  border-color: #db00ff;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  background-color: #DB00FF;
+}
+
+.icon:active {
+  border: 1px solid #db00ff;
+  border-radius: 12px;
+  -webkit-box-shadow: inset 0 0 20px 0 rgba(43, 0, 50, 0.85);
+          box-shadow: inset 0 0 20px 0 rgba(43, 0, 50, 0.85);
 }

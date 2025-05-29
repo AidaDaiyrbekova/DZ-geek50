@@ -4,29 +4,28 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #1a1a1a;
-  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.83);
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
-  margin: 0;
   padding-top: 60px;
 }
 
 .container {
   background-color: #000000;
-  padding: 30px;
-  border-radius: 10px;
-  width: 600px;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  //padding: 30px;
+  width: 740px;
+  padding: 60px 30px;
+  height: 838px;
+
 }
 
 h1 {
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 140%;
   color: #fff;
   margin-bottom: 40px;
@@ -35,69 +34,79 @@ h1 {
 .input-section {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   align-items: center;
 }
 
 .task-input {
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
+  background-color: #000000;
   border-radius: 12px;
   padding: 16px;
-  flex-grow: 1;
-  background-color: #000000;
-  font-size: 16px;
+  width: 440px;
+  //height: 54px;
+
+}
+.task-btn {
+  display: flex;
+  gap: 10px;
+  margin-left: 90px;
 }
 
 .btn {
-  border: 1px solid #db00ff;
+  border: 1px solid #DB00FF;
   border-radius: 12px;
   padding: 16px;
   cursor: pointer;
-
+  width: 100px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000;
 }
 
 .btn:hover {
-  background-color: #baa5be;
+  background-color: #DB00FF;
 }
-
 .btn:active {
-  transform: translateY(0);
+  border: 1px solid #db00ff;
+  border-radius: 12px;
+  box-shadow: inset 0 0 20px 0 rgba(43, 0, 50, 0.85);
 }
-
-.clear-all-btn:hover {
-  background-color: #baa5be;
-}
-
 .task-list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 30px;
 }
 
 .task-item {
   display: flex;
   align-items: center;
-  gap: 10px;
+  //gap: 2px;
 }
-.cancel-btn:hover {
-  background-color: #baa5be;
-}
-
-.save-btn:hover {
-  background-color: #baa5be;
+.task-actions {
+  display:flex;
+  gap: 20px;
+  width: 128px;
+  margin-left: 172px;
 }
 
 .icon {
   width: 54px;
   height: 54px;
   cursor: pointer;
-  border: 2px solid transparent;
-  border-radius: 5px;
-  padding: 3px;
+  border: 1px solid #DB00FF;
+  border-radius: 12px;
   transition: border-color 0.3s ease, transform 0.2s ease;
 }
 
 .icon:hover {
-  border-color: #db00ff;
-  transform: scale(1.05);
+  background-color: #DB00FF;
 }
+.icon:active {
+  border: 1px solid #db00ff;
+  border-radius: 12px;
+  box-shadow: inset 0 0 20px 0 rgba(43, 0, 50, 0.85);
+}
+
