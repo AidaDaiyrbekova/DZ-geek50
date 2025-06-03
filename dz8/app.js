@@ -1,19 +1,19 @@
-//1 Задача
-// let input = prompt("Введите число:");
-// let number = Number(input); // Преобразование строки в число
-// console.log("Вы ввели число:", number);
-//
-// function checkEvenOdd(number) {
-//     if (number % 2 === 0){
-//         console.log(number, 'Четное число.')
-//     }
-//     else  {
-//         console.log(number, 'Нечетное число.')
-//         }
-// }
-// console.log(checkEvenOdd(number))
+// 1 Задача
+let input = prompt("Введите число:");
+let number = Number(input); // Преобразование строки в число
+console.log("Вы ввели число:", number);
 
-//2 Задача
+function checkEvenOdd(number) {
+    if (number % 2 === 0){
+        console.log(number, 'Четное число.')
+    }
+    else  {
+        console.log(number, 'Нечетное число.')
+        }
+}
+console.log(checkEvenOdd(number))
+//
+// 2 Задача
 // let input = prompt("Введите число:");
 // let number = Number(input);
 // // console.log("Вы ввели число:", number)
@@ -30,8 +30,8 @@
 // }
 //
 // console.log('Факториал числа',number,'=',factorial(number))
-
-//3 Задача
+//
+// 3 Задача
 // let arr=[5,25,15,2,6,30,9,11]
 // console.log(arr)
 //
@@ -48,8 +48,8 @@
 // }
 //
 // console.log('Максимальное число в массиве',findMax(arr));
-
-//4 Задача
+//
+// 4 Задача
 // let arr=['a', 'e', 'i', 'o', 'u']
 // let input=prompt('Введите слово')
 //
@@ -65,9 +65,9 @@
 //
 // console.log(input)
 // console.log(countVowels(input), 'гласных')
-
-
-//5 Задача
+//
+//
+// 5 Задача
 // let arr=[-1,2,-3,4,-5]
 //
 // function sumArray(arr){
